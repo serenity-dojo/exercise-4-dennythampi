@@ -1,11 +1,14 @@
 package com.serenitydojo;
 
-public class Cat {
+public class Dog {
     private String name;
     private String favoriteToy;
     private int age;
+    private String makeNoise;
 
-    public Cat(String name, String favoriteToy, int age) {
+    public static final String DOG_NOISE = "Woof";
+
+    public Dog(String name, String favoriteToy, int age) {
         this.name = name;
         this.favoriteToy = favoriteToy;
         this.age = age;
@@ -33,5 +36,14 @@ public class Cat {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public boolean isFed() {this.equals("True");
+        return false;
+    };
+
+    public String makeNoise() {
+
+        return "Woof";
     }
 }
